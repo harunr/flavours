@@ -1,0 +1,1294 @@
+
+/* Typography */
+
+@font-face {
+    font-family: 'TheHound-Quail-Bold';
+    src: url('../fonts/TheHound-Quail-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TheHound-Quail-Bold.otf')  format('opentype'),
+        url('../fonts/TheHound-Quail-Bold.woff') format('woff'),
+        url('../fonts/TheHound-Quail-Bold.ttf')  format('truetype'),
+        url('../fonts/TheHound-Quail-Bold.svg#TheHound&Quail-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'tradegothicnextltprobd';
+    src: url('../fonts/tradegothicnextltprobd.eot');
+    src: url('../fonts/tradegothicnextltprobd.eot') format('embedded-opentype'),
+         url('../fonts/tradegothicnextltprobd.woff2') format('woff2'),
+         url('../fonts/tradegothicnextltprobd.woff') format('woff'),
+         url('../fonts/tradegothicnextltprobd.ttf') format('truetype'),
+         url('../fonts/tradegothicnextltprobd.svg#tradegothicnextltprobd') format('svg');
+}
+
+
+
+@font-face {
+    font-family: 'TradeGothicLT-Bold';
+    src: url('../fonts/TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/TradeGothicLT-Bold.woff') format('woff'), 
+        url('../fonts/TradeGothicLT-Bold.ttf')  format('truetype'), 
+        url('../fonts/TradeGothicLT-Bold.svg#TradeGothicLT-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'TradeGothicNextLTProBdCn';
+    src: url('../fonts/TradeGothicNextLTProBdCn.eot');
+    src: url('../fonts/TradeGothicNextLTProBdCn.eot') format('embedded-opentype'),
+         url('../fonts/TradeGothicNextLTProBdCn.woff2') format('woff2'),
+         url('../fonts/TradeGothicNextLTProBdCn.woff') format('woff'),
+         url('../fonts/TradeGothicNextLTProBdCn.ttf') format('truetype'),
+         url('../fonts/TradeGothicNextLTProBdCn.svg#TradeGothicNextLTProBdCn') format('svg');
+}
+
+@font-face {
+    font-family: 'TradeGothicLT';
+    src: url('../fonts/TradeGothicLT.eot');
+    src: url('../fonts/TradeGothicLT.eot') format('embedded-opentype'),
+         url('../fonts/TradeGothicLT.woff2') format('woff2'),
+         url('../fonts/TradeGothicLT.woff') format('woff'),
+         url('../fonts/TradeGothicLT.ttf') format('truetype'),
+         url('../fonts/TradeGothicLT.svg#TradeGothicLT') format('svg');
+}
+
+
+
+/* // End typography */
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; }
+
+ul{list-style: none;} 
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video{display: block;}
+
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: ''; content: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+b, strong{font-weight: bold;}
+[type="checkbox"], [type="radio"]{box-sizing: border-box; padding: 0;}
+[type="search"]{-webkit-appearance: textfield; outline-offset: -2px;}
+[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+::-webkit-file-upload-button{-webkit-appearance: button; font: inherit;}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{border:0; width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+a,input,select,textarea{outline:none;}
+img{width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+
+/* Selection colours (easy to forget) */
+img::selection{background: transparent;}
+img::-moz-selection{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+
+input[type='number']{-moz-appearance:textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{-webkit-appearance: none;}
+input::-moz-focus-inner{border:0; padding: 0; }
+input:invalid,
+input:required{box-shadow: none;}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{display: none;}
+input:required { box-shadow:none; }
+input::-moz-focus-inner{box-shadow:0 0 0px transparent;}
+/* === Default Layout === */
+
+
+body{background: #F6EEE7; -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; font-size:18px; line-height: 22px; color:#000000; font-family: "trade-gothic-next",sans-serif; font-weight: 400; font-style:normal; overflow-x: hidden; overflow-y:auto;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+.c-scrollbar {z-index: 999;}
+.c-scrollbar_thumb {background-color: #039fe3;}
+/* Global style */
+h1, h2, h3, h4, h5, h6{font-size:110px; line-height: 100px; color:#ffffff;font-family: 'TheHound-Quail-Bold',sans-serif; font-weight: normal; font-style: normal; text-transform: uppercase;}
+h2, h3, h4, h5, h6{font-size:70px;line-height: 65px; color:#000000; }
+h2{font-size: 65px; line-height: 60px;}
+h3, h4{font-size:30px; line-height: 36px;color:#000000; font-family: 'TradeGothicNextLTProBdCn',sans-serif;}
+h4{font-size:24px; line-height: 28px;}
+h5{font-size:20px; line-height: 24px; color:#ffffff}
+dfn, address, em{font-style: normal;}
+label, input[type="submit"]{cursor: pointer;}
+button:focus{outline: none;}
+
+.btn{min-width:260px; min-height: 56px; font-size:20px; line-height:56px; color:#ffffff; font-family: 'TradeGothicNextLTProBdCn',sans-serif; font-weight: normal; text-transform: uppercase; font-style: normal; border-radius: 33px; -webkit-border-radius: 33px; -moz-border-radius:33px; text-align: center;-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; background-color:#ffffff; position: relative; overflow-x: hidden!important; overflow: hidden!important;}
+.btn:before{content: ''; background: #000; width: 120%; height: 100%; position: absolute; top: 0; left: -10%; transform: skew( 30deg ); transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1); background-color: #fcb1a5;}
+.btn dfn{position: relative; z-index: 1; transition: 0.4s cubic-bezier(0.3, 1, 0.8, 1);}
+.btn:hover:before{ transform: translate3d(100%,0,0); }
+.btn:hover{overflow: hidden;}
+.btn:hover dfn{color: #002856}
+.btn.medium{min-width:182px; min-height: 56px; border-radius: 33px;}
+
+.mobi{display: none;}
+.desk{display: block;}
+.tablet{display: none}
+.common-wrap, .large-container, .md-container, .sm-container, .ex-sm-container{max-width: 1324px; margin: 0 auto; clear: both; padding: 0 40px;}
+.common-wrap .common-wrap, .common-wrap .large-container, .common-wrap .md-container, .common-wrap .sm-container, .common-wrap .ex-sm-container{padding: 0;}
+.large-container{max-width:1580px;}
+.common-wrap .large-container{max-width:1500px;}
+.md-container{max-width: 1464px;}
+.common-wrap .md-container{max-width: 1384px;}
+.sm-container{max-width: 1072px;}
+.common-wrap .sm-container{max-width: 992px;}
+.ex-sm-container{max-width:839px;  position: relative; z-index: 9; }
+.common-wrap .ex-sm-container{max-width: 736px} 
+.centerY { position: absolute; left: 0; right: 0; text-align: center; top: 50%; width: 100%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); color: #ffffff; }
+
+.text-navy{color: #000000!important;}
+
+/* Flex style */
+.flex-box{display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.flex-horizontal-align{-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center;}
+.flex-vertical-align{-webkit-box-align: center; align-items: center;}
+.flex-bottom-align{-webkit-box-align: flex-end; align-items: flex-end;}
+.flex-content-align{-webkit-align-content: center; -moz-align-content: center; align-content: center;}
+.order-1{-webkit-order: 1; -moz-order: 1; -ms-order: 1; order: 1;}
+.order-2{-webkit-order: 2; -moz-order: 2; -ms-order: 2; order: 2;}
+.flex{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex;}
+/* End Flex style */
+
+section, footer, header{float: left; width: 100%; position: relative;}
+body,html{height: 100%;}
+.main-wrap{min-height: 100%; overflow: hidden;position: relative; overflow-x: hidden; padding-bottom: 0; }
+.inner-wrap {float: left; width: 100%;}
+/* === Beginning header style === */
+
+/* Top header*/
+.header-top{float: left; width: 100%; background-color: #fcb1a5; padding: 8px 0;}
+.free-shipping{float: left; width: 100%; text-align: center;}
+.free-shipping a{font-size:15px; line-height: 18px; color: #002856;  font-family: 'tradegothicnextltprobd',sans-serif; font-weight: normal; font-style: normal; text-transform: uppercase;}
+/* Top header*/
+
+/* Header Style */
+.main-header-section{float: left; width: 100%; position: absolute; top: 0; left: 0; z-index: 11; -webkit-transition: all 0.7s ease-in-out;-o-transition: all 0.7s ease-in-out;transition: all 0.7s ease-in-out; }
+.header-wrap{float: left; width: 100%; padding: 20px 0;}
+.header-wrap .common-wrap{max-width: 1420px;}
+.header-main{float: left; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;-webkit-box-align: center;-ms-flex-align: center;align-items: center;} 
+.nav-wrap{float: left; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; width: 45.485185%; padding-bottom: 3px;}
+.nav-wrap ul li{float: left; margin-right: 46px;}
+.nav-wrap ul li a{float: left; color: #002856; font-family: 'tradegothicnextltprobd',sans-serif; font-size: 16px; line-height: 16px; position: relative; z-index: 9;}
+.header-logo-wrap{ float: left; width: 8.803704%; position: relative; z-index: 1;}
+.header-logo-wrap a img{width: 100%;}
+.menu-cart-wrap{float: left; width: 45.11111111111111%;}
+.menu-cart{float: right; width: auto; display: -moz-flex; display: -ms-flex; display: -o-flex; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline;}
+.contact-location{color: #002856; font-family: 'tradegothicnextltprobd',sans-serif; font-size: 16px; line-height: 25px; margin-top: 0px; display: block; margin-right: 75px; display: block; z-index: 1;}
+.cart-btn{width: 62px; background-color: #fff; height: 62px; border-radius: 50%; border: 1px solid #002856;  margin: 0 auto; text-align: center; padding: 15px 0; position: absolute; top: 63px; right: 33px}
+.header-fixed.headroom--not-top{background-color: #fcb1a5; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); position: fixed;}
+.header-static.headroom--not-top{transform: translateY(-200%); transition: 0.3s ease-in;}
+.header-fixed.headroom--not-top .header-top{display: none;}
+.header-fixed.headroom--not-top .cart-btn{top: 50%; -webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+
+
+
+/* Start dropdown section */
+.dropdown-mead-wrap {float: left; width: 100%; margin-top: 0; padding: 50px 0 21px; opacity: 0; position: absolute; top: 86px; left: 0; visibility: hidden; -webkit-transition: .4s ease-in-out; -moz-transition: .4s ease-in-out; -o-transition: .4s ease-in-out; transition: .4s ease-in-out; -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px); transform: translateY(-20px);}
+.dropdown-mead-area{float: left; width: 100%; background-color: #f6eee7; padding: 36px 0;}
+.dropdown-mead-wrap .common-wrap{max-width: 1436px; padding: 0 20px;}
+.dropdown-mead-inner{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; width: 100%; padding-left: 3px;}
+.dropdown-item-wrap{width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+.dropdown-item { width: 24.51333813987022%; background-color: #efe6df; padding: 30px 20px 40px 25px;margin: 0 0.24333093006489%;}
+a.dropdown-item-thumb{float: none!important; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap;justify-content: center; margin-bottom: 23px; width: auto;}
+.dropdown-item-thumb img{width: auto; max-height: 180px;}
+.dropdown-item-content{width: 100%; margin-bottom: 4px; max-width: 250px; margin: 0 auto;}
+.dropdown-item-content h3{line-height: 30px; letter-spacing: 0.92px; font-family: 'TheHound-Quail-Bold',sans-serif;text-align: center; margin-bottom: 18px;}
+.dropdown-item-content h3 a{color: #643f72!important; font-size: 30px!important; line-height: 30px!important; letter-spacing: 0.92px!important; font-family: 'TheHound-Quail-Bold',sans-serif!important; text-align: center; margin-bottom: 18px; }
+.dropdown-item-content p{font-size: 14px; line-height: 19px; line-height: normal; color: #643f72;text-align: center;}
+.dropdown-mead-inner h4{line-height: normal; color: #002856; font-family: 'TradeGothicNextLTProBdCn',sans-serif;width: 100%; margin-bottom: 27px;}
+
+.dropdown-item:nth-child(even) .dropdown-item-content h3 a{color: #002856!important; }
+.dropdown-item:nth-child(even) .dropdown-item-content p{color: #002856;}
+
+.nav-wrap ul li:hover > .dropdown-mead-wrap{opacity: 1; visibility: visible; -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0);} 
+
+
+/* End dropdown section */
+
+
+/* Header Style */
+
+/* === End header style === */
+
+/* == Beginning Hero section == */
+.hero-wrapper {float: left; width: 100%; text-align: center; padding-top: 114px; position: relative; min-height: 839px;}
+.hero-wrap{ max-width: 831px; margin: 0 auto; padding: 0 40px;}
+.hero-thumb{ position: absolute; top: 39px; left: 0; width: 100%; height: 100%;}
+.hero-thumb img{float: left; width: 100vw; height: 100%; object-fit: cover;}
+.hero-content{position: absolute; top: 43%; transform: translate(0, 0); width: 100%; left: 0;}
+.hero-content h1{font-size: 75px; line-height: 50px; color: #000000;}
+.hero-content p{font-size: 26px; line-height: 50px; color: #000000; font-family: 'TheHound-Quail-Bold';     margin-top: 7px;}
+.hero-btn{float: left; width: 100%; margin-top: 20px; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; justify-content: center;}
+.shop-mead{margin-right: 2%;}
+/* == End Hero section == */
+
+.social-icon{float: right; width: 42px; position: absolute; right: 42px; top: 145px; z-index: 999;}
+.social-icon a{display: block; width: 39px; margin: 0 auto; padding-bottom: 18px;}
+ .item-wrap{float: left; width: 100%; margin-top: 93px; text-align: center;}
+.item-wrap .common-wrap{max-width: 1030px;}
+.item-info{float: left; width: 100%;}
+.item-info h4{font-family: 'TradeGothicNextLTProBdCn';}
+.item-inner{ float: left; width: 100%; margin-left: 37px; margin-top: 35px; }
+.item-thumb{float: left; width: 18.931442%; margin: 0 2.0044%; }
+.item-thumb:nth-child(2){transition-delay: 0.1s}
+.item-thumb:nth-child(3){transition-delay: 0.2s}
+.item-thumb:nth-child(4){transition-delay: 0.3s}
+
+.products-wrap{float: left; width: 100%; margin-top: 75px;}
+.products-wrap .common-wrap{max-width: 1270px;}
+.products-inner{float: left; width: 100%;}
+.products-content{float: left; width: 47.034%; margin-right: 8.5%; margin-top:12px;}
+.products-content h4{font-family: 'TradeGothicNextLTProBdCn'; transition-delay: 0.05s;}
+.products-content h2{margin-top: 24px; transition-delay: 0.1s;}
+.products-content p{margin-top: 35px; max-width: 540px; transition-delay: 0.1s;}
+.product-thumb{float: left; width:40.72512647554806%; position: relative;}
+.van-hunks-stamp { width: 100%; float: left; position: absolute; top: 62px; left: -56px; display: none;}
+.discover-product {float: left; width: 100%; margin-top: 70px; transition-delay: 0.2s;}
+.van-hunks-bottol {float: left; width: 171px; position: absolute; bottom: -26px; right: -82px; z-index: 1; display: none;}
+.van-hunks-foilage{float: left; width: 460px; position: absolute; bottom: -29px; right: auto; left: -33px; }
+.discover-product a { float: left; width: auto; display: block; position: relative; font-size: 18px; line-height: 22px; color: #000000; font-family: 'TradeGothicNextLTProBdCn'; padding-right: 110px;}
+.discover-product a:after{content: ''; position: absolute; background-image: url(../svgs/home/line-5.svg); width: 85px; height: 17px; background-position: center right; background-repeat: no-repeat; background-size: cover; right: 0; top: 11px; }
+ .sparkling-wine-wrap{float: left; width: 100%; margin-top: 137px; }
+.sparkling-wine-wrap .common-wrap{max-width: 1380px;}
+.sparkling-wine-info{float: left; width: 100%;}
+.sparkling-wine-info-item{float: left; width: 41.33%; margin: 0 4.30%;}
+.sparkling-wine-info-item:nth-child(2), .sparkling-wine-info-item:nth-child(2) .wine-content{transition-delay: 0.2s!important}
+.sparkling-wine-thumb-item{float: left; width: 100%;}
+.sparkling-wine-thumb-item img{border-radius: 80px 80px 0 0;}
+.wine-content{float: left; width: 100%; margin-top: 7px; text-align: center;}
+.wine-content p{max-width: 400px; margin: 0 auto; padding-top: 10px; padding-bottom: 3px;}
+.wine-content h3{font-size: 40px; line-height: 60px; font-family: 'TheHound-Quail-Bold',sans-serif;}
+.heading-text{color: #000000;}
+.wine-content a{margin-top: 26px; margin-right: 0;}
+.info-product-wrap{float: left; width: 100%; margin-top: 118px;}
+.info-product-wrap .common-wrap{max-width:1396px; }
+.info-product-inner{float: left; width: 100%;}
+.info-product-item{float: left; width: 28.4960688%; margin: 33px 1.990445859872611% 0; }
+.info-product-thumb{float: left; width: 100%;}
+.info-product-thumb figure{ width: 180px; margin: 0 auto;}
+.info-product-content{float: left; width: 100%; margin-top: 51px; text-align: center;}
+.info-product-content h3{font-family: 'TheHound-Quail-Bold',sans-serif; max-width: 260px; margin: 0 auto;}
+.info-product-content a{color: #000000;}
+.info-product-content p{font-size: 16px; line-height: 22px; margin-top: 15px;}
+.small-batches figure{width:215px;}
+.small-batches .info-product-content{margin-top: 20px;}
+.small-batches { width: 30.496069%; margin: 0px 1% 0 1.990446%;}
+
+.famous-wrap{float: left; width: 100%; background-color: #ffffff; position: relative; margin-top: 184px; padding-bottom: 100px;}
+.famous-wrap .common-wrap{max-width: 1440px; padding: 0;}
+.famous-wrap:after{ content: ''; position: absolute; background-image: url(../svgs/home/wave-5.svg); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: 288px; top: -16%; left: 0;}
+.famous-wrap:before{ content: ''; position: absolute; background-image: url(../svgs/home/wave-6.svg); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: 288px; top:auto; bottom: -20%; left: 0;}
+.famous-inner{max-width: 709px; margin: 0 auto; text-align: center; position: relative; z-index: 9}
+.famous-thumb{float: left; width: 100%;  padding-top: 46px;}
+.famous-content{float: left; width: 100%; margin-top: 34px;}
+.famous-content .btn:hover { overflow: hidden; border: 1px solid #000; }
+.famous-content h2{margin-top: 26px;}
+.famous-content p{padding-top: 27px; text-align: center; max-width: 628px; margin: 0 auto;}
+.famous-content a{margin-top: 40px; margin-left: 12px;}
+.left-img{ position: absolute; width: 458px; left: -16%; top: 107px; z-index: 9;}
+.right-img{float: left; width:460px; position: absolute; right: -16%; top: auto; bottom: 56px; z-index: 9;}
+.right-img img{transition-delay: 0.3s}
+
+.shop-drink-wrap{float: left; width: 100%; margin-top:205px;}
+.shop-drink-wrap .common-wrap{max-width: 1382px;}
+.shop-drink-info{float: left; width: 100%;}
+.shop-drink-content{max-width: 846px; margin: 0 auto; text-align: center;}
+.shop-drink-content a{position: relative; margin-top: 22px; padding-bottom: 10px; width: auto; font-size: 24px; line-height: 28px; color: #000000; font-family: 'TradeGothicNextLTProBdCn',sans-serif; font-weight: normal; font-style: normal; text-transform: uppercase;}
+.shop-drink-content a:after{content: ''; position: absolute; background-color: #002856; width: 162px; height: 1px; bottom: 0; left: 0;}
+
+.shop-drink-item{ float: left; width: 22.8486%; margin: 82px 1.01446% 0; -webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; outline: none;}
+.shop-drink-thumb{float: left; width: 100%; position: relative;-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+.shop-drink-thumb img{width: 100%; height: 422px; margin: 0 auto; object-fit: cover; object-position: center center;}
+.rose-mead .shop-drink-thumb img{width: 100%;}
+.rose-mead .shop-info-content{margin-top: 25px;}
+.shop-info-content{float: left; width: 100%; text-align: center; margin-top: 17px; }
+.shop-info-content h3{ max-width: 190px ; margin: 0 auto; font-size: 34px; line-height: 34px; font-family: 'TheHound-Quail-Bold',sans-serif;margin-top: 15px; color: #643f72}
+.shop-info-content a{ color: #643f72}
+.shop-info-content p{max-width: 255px; margin: 0 auto; font-size: 14px; line-height: 18px; padding-top: 12px; color: #643f72;}
+.shop-info-content span{display: block; margin-top: 13px; font-family: 'TradeGothicNextLTProBdCn'; font-size: 18px; line-height: 31px; letter-spacing: 0.55px; color: #643f72;}
+
+.nature-honey-wrap{float: left; width: 100%; margin-top: 144px;}
+.nature-honey-wrap .common-wrap{max-width: 1272px;}
+.nature-honey-inner{float: left; width: 100%;}
+.nature-honey-thumb{float:left; width: 45.0503355704698%; position: relative; margin-right: 9.647651006711409%;}
+.nature-honey-content{float: left; width: 45.21812080536913%; margin-top: 39px;}
+.nature-honey-content h4{padding-bottom: 25px;}
+.nature-honey-content p{margin-top: 40px; max-width: 530px;}
+.nature-honey-content-list{float: left; width: 100%; margin-top:38px;}
+.nature-honey-content-list ul{float: left; width: 100%; }
+.nature-honey-content-list ul li{font-size: 20px; line-height: 25px; font-family: 'TradeGothicNextLTProBdCn'; color: #002856; position: relative; padding-left: 42px;padding-bottom: 12px;}
+.nature-honey-content-list ul li:before{content: ''; position: absolute;background-image: url(../svgs/home/polygon.svg); background-size: cover; background-position: center; background-repeat: no-repeat; width: 21px; height: 25px; top:0; bottom: auto; left: 0;}
+ .nature-honey-left{ float: left; width: 99px; position: absolute; top: 80px; left: -17px; display: none;}
+.nature-honey-right{float: left; width: 55px; position: absolute; top: 20px; left: auto; right: 20px; display: none;}
+.nature-honey-bottom { float: left; width: 514px; height: 115px; position: absolute; top: auto; bottom: 119px; left: auto; right: 23px; }
+
+.hover-thumb{float: left; width: 100%; position: absolute; top: 0; height: 100%; opacity: 0; -webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out;  cursor: pointer;}
+.hover-thumb img{ width: 100%; }
+.rose-mead .hover-thumb img{ width: 100%!important;}
+.add-btn {position: absolute; bottom: 34px; top: auto; margin: 0 auto; width: auto; left: 50%; transform: translateX(-50%);}
+.shop-drink-thumb figure{float: left; width: 100%; opacity: 1; -webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}
+.shop-drink-item:hover .shop-drink-thumb figure{opacity: 0;}
+.shop-drink-item:hover .hover-thumb{opacity: 1;}
+.shop-drink-item:hover .hover-thumb figure{opacity: 1;}
+
+.gallery-wrap{float: left; width: 100%;background-color: #ffffff; padding-top: 35px; margin-top: 156px; padding-bottom: 30px;}
+.gallery-inner{max-width: 1440px; padding: 0; clear: both; margin: 0 auto}
+.gallery-item-info{float: left; width: 100%;}
+.gallery-item{float: left; width: 27.8%; margin: 0 0.9%;}
+.gallery-side-item{margin-left: -23%;}
+.gallery-right-item{margin-right: -28%;}
+.circle{background-color: #e3f7ff;}
+.gallery-item img{width: 100%}
+
+/* Beginning Footer Section */
+.main-footer-section{float:left; width:100%; margin-top:0px;padding-bottom:150px; background-color: #ffffff;}
+.main-footer-section:before{content: ''; width: 100%; height: 665px; background-image: url(../img/footer-img@2x.png); background-repeat: no-repeat; background-size: cover; left: 0; top: auto; bottom: 0; position: absolute;}
+.news-letter-wrap{float:left; width:100%; text-align: center ; margin-top: 35px;}
+.news-letter-wrap h2{font-size:60px; line-height: 55px}
+.news-letter-wrap h2 span{color: #643f72;}
+
+.input-col input:not([type="submit"])::placeholder, .input-col textarea::placeholder{color: #000000;}
+.submit:after{display: none;}
+.input-wrap{float:left; width:100%; border-bottom: 1px solid #002856; margin-top: 33px;}
+.input-col{float: left; width: 65%;}
+.input-col.sign-up-btn { width: 20%; position: relative; float: right; padding-right: 0;}
+.input-col input[type="email"], .input-col input[type="submit"] { float: left; width: 100%; height: 80px; font-size: 25px; line-height: 30px; text-align: center; background-color: transparent; color: #000000; font-family: "trade-gothic-next",sans-serif; font-weight: 400; padding: 27px 29px 17px 7px; font-style: normal; text-align: left; border: none;}
+.input-col input[type="submit"] { float: left; width: 100%; line-height: 84px; color: #000000;font-family: 'TradeGothicNextLTProBdCn',sans-serif; text-align: center; padding: 0;text-transform: uppercase;}
+.social-wrap{float:left; width:100%; margin-top: 55px;}
+.social-wrap span {font-size: 25px; line-height: 37px; color: #000000; font-family: "trade-gothic-next",sans-serif; font-weight: 400; font-style: normal; display: block;}
+.social-wrap a{display: inline-block; margin-top: 24px; width: 65px;}
+.insta-icon{margin-right: 2%;}
+.footer-logo{max-width:120px; margin: 0 auto; padding-top: 54px; clear:both }
+.footer-logo a{float: left; width: 100%;}
+.copy-right{float:left; width:100%; text-align: center; margin-top: 91px;}
+.copy-right p,  .copy-right ul li { display: inline-block;font-size:16px; line-height: 18px; color: #000000; margin: 0 30px; font-family: "trade-gothic-next",sans-serif;;   font-weight: 400; font-style: normal; }
+.copy-right p, .copy-right ul { display: inline-block; width: auto; }
+.copy-right ul li a{color:#000000;}
+.footer-bottom-bg{float: left; width: 100%; padding:0 64px; margin-top: 150px; position: relative}
+.footer-bottom-bg img{float: left; width: 100%; }
+.ship{width: 96px; position: absolute; bottom: 83px; right: 31.5%;}
+.form-wrap { max-width: 640px; margin: 0 auto;}
+/* End Footer Section */
+
+/* Start Newsletter Modal Style */
+/*.newsletter-modal-wrap{float: left; width: 100%; padding: 16px 0; background-color: #ffffff; height: 100vh;}*/
+
+
+.newsletter-modal-wrap .common-wrap{max-width: 826px; padding:  0 17px;}
+.newsletter-modal-innar{float: left; width: 100%; position: relative;}
+.newsletter-modal-bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.newsletter-modal-bg figure{width: 100%; height: 100%;}
+.newsletter-modal-bg figure img{float: left; width: 100vw; height: 100%; object-fit: cover; object-position: bottom;}
+.newsletter-modal-content{position: relative; z-index: 3; float: left; width: 100%; padding: 30px 20px 48px;}
+.newsletter-modal-close { position: absolute; top: 6%; right: 2.5%; }
+.newsletter-modal-logo{width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+.newsletter-modal-logo a{width: 90px;}
+.newsletter-modal-main-content { width: 100%; margin-top: 20px; }
+.newsletter-modal-main-content h2{font-size: 45px; line-height: 45px; letter-spacing: 0; color: #002856; text-align: center;}
+.newsletter-modal-main-content h2 em{color: #009fe3; text-align: center;}
+.newsletter-modal-input-row-wrap { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; justify-content: center; margin-top: 23px; padding-left: 8px; }
+.newsletter-modal-input-row{width: 100%; max-width: 618px; border: 1px solid #002856; background-color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+.newsletter-modal-input{width: calc(100% - 147px);}
+.newsletter-modal-input input{font-size: 20px; color: #000000; letter-spacing: 0; line-height: 64px; font-family: "trade-gothic-next",sans-serif;
+ font-weight: 400; background-color: transparent; width: 100%; height: 62px; padding: 0 34px 2px 34px; border: none; outline: none;}
+.newsletter-modal-input input::placeholder{color: #002856;}
+.newsletter-modal-input-submit{width: 147px;}
+.newsletter-modal-input-submit input{font-family: 'TradeGothicNextLTProBdCn', sans-serif; font-weight: normal; width: 100%; text-align: center; padding: 0 10px; text-transform: uppercase; line-height: 62px;}
+/* End Newsletter Modal Style */
+
+/*Animation Style*/
+.fade-from-bottom {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+}
+.is-inview .fade-from-bottom, .is-inview.fade-from-bottom {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    opacity: 1;
+}
+.fade-from-left{
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+}
+.is-inview .fade-from-left, .is-inview.fade-from-left {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    opacity: 1;
+}
+.fade-from-right{
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+}
+.is-inview .fade-from-right, .is-inview.fade-from-right {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    opacity: 1;
+}
+/*Animation Style*/
+
+
+
+
+/* Start Single-Product Style */
+
+/* Start product-details Style*/
+.product-details{float: left; width: 100%; padding-top: 151px;}
+.product-details .common-wrap{max-width: 1440px; padding: 0;}
+.product-details-innar{width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+.product-details-thumb{width: 50%;}
+.product-details-thumb picture img{width: 100%;}
+.product-details-content-wrap{width: 50%; padding-top: 140px;}
+.product-details-content{max-width: 599px; margin: 0 auto; padding: 0 20px;}
+
+.product-details-content h3{font-size: 40px; line-height: 40px; letter-spacing: 1.23px; color: #000000; font-family: 'TheHound-Quail-Bold', sans-serif; font-weight: normal; padding-bottom: 21px;}
+.product-details-content p{font-size: 18px; line-height: 22px; color: #000000;}
+
+.product-details-btn{float: left; width: 100%; margin-top: 37px;}
+.product-details-btn ul{width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+.product-details-btn ul li{width: 47.94275491949911%; margin-right: 4.114490161001789%; margin-bottom: 18px;}
+.product-details-btn ul li:nth-child(2n + 2){margin-right: 0;}
+.product-details-btn ul li a{width: 100%; min-height: 54px; color: #000000; border: 1px solid #002856; border-radius: 33px; transition: .45s ease-in-out; padding: 0 28px 0 29px; line-height: 54px;}
+.product-details-btn ul li a:hover{background-color: #000000; color: #ffffff;}
+.product-details-btn ul li.active a{background-color: #000000; color: #ffffff;}
+.product-details-btn ul li a span{float: left; font-size: 16px; letter-spacing: 0; font-family: "trade-gothic-next-condensed",sans-serif; font-weight: normal;} 
+.product-details-btn ul li a span em{font-size: 20px; font-family: 'TradeGothicNextLTProBdCn', sans-serif; margin-right: 4px;}
+.product-details-btn ul li a > em{float: right; font-family: 'TradeGothicNextLTProBdCn', sans-serif; font-size: 20px;}
+.product-add-btn{float: left; width: 100%; margin-top: 3px;}
+.product-add-btn a{width: 100%;}
+.product-details-fruity{float: left; width: 100%; margin-top: 42px;}
+.product-details-fruity h6{font-size: 18px; line-height: 22px; letter-spacing: 0; font-family: 'tradegothicnextltprobd', sans-serif; font-weight: normal; color: #000000;}
+.product-details-fruity ul{width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; margin-top: 23px;}
+.product-details-fruity ul li{width: 100%; font-size: 18px; line-height: 22px; letter-spacing: 0; color: #000000; padding-left: 19px; position: relative;}
+.product-details-fruity ul li:before, .product-details-fruity ul li:after { content: ''; position: absolute; top: 12px; left: 1px; width: 9px; height: 2px; background-color: #002856; }
+.product-details-fruity ul li:after { transform: rotate(90deg); }
+/* End product-details Style*/
+
+.single-product .shop-drink-content h3{font-size: 40px; line-height: 40px; letter-spacing: 1.23px; color: #000000; font-family: 'TheHound-Quail-Bold', sans-serif;}
+.single-product .shop-drink-wrap {margin-top: 98px; }
+.single-product .shop-drink-thumb figure{z-index: 2; position: relative;}
+.single-product .shop-drink-thumb-back{position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%); z-index: 1; width: 78.451178451178455%;}
+.single-product .shop-drink-thumb-back figure{width: 100%;}
+.single-product .shop-drink-thumb-back figure img{width: 100%;}
+.single-product .add-btn{z-index: 3;}
+.single-product .rose-mead .shop-info-content { margin-top: 20px; }
+.single-product .shop-info-content { margin-top: 12px; }
+.single-product .gallery-wrap { margin-top: 143px;}
+.circle{position: relative;}
+.circle figure{max-width: 60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+/* End Single-Product Style */
+
+
+
+.shop-single-product .shop-info-content h3 {max-width: 200px; letter-spacing: 1.05px;}
+
+
+
+/*Default*/
+.default-wrap{margin-top: 172px; padding-bottom: 50px;}
+.default-wrap .nature-honey-inner{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; margin-top: 194px;}
+.default-wrap .nature-honey-inner:nth-child(odd) {margin-top: 0;}
+.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-thumb {order: 2; margin-right: 0; margin-left: 9.647651006711409%;}
+
+
+/*Default*/
+
+
+
+.modalOpen .newsletter-modal-wrap { -webkit-transform: translatey(-0%); -ms-transform: translatey(-0%); transform: translatey(-0%); }
+
+
+.newsletter-modal-wrap{height: 100vh;float: left; width: 100%; padding: 16px 0; position: fixed; top: 0; right: 0; -webkit-transform: translatey(-400%); -ms-transform: translatey(-400%); transform: translatey(-400%); -webkit-transition: 0.6s ease-in-out; -o-transition: 0.6s ease-in-out; transition: 0.6s ease-in-out; background-color: #ffffff; overflow-y: scroll; z-index: 9999; overflow-x: hidden;}
+
+
+
+
+
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 280px) and (max-width:480px)  {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+    h1,.top-table-text h1{font-size:50px; line-height: 45px}
+    h2{font-size:35px; line-height: 35px;}
+    h4{font-size:20px; line-height: 29px}
+    h5{font-size:16px; line-height: 22px}
+	.common-wrap{padding: 0 18px;}
+    .desk{display: none}
+    .mobi{display: block}
+    
+	  /* Menu style */
+	.main-header-section{background-color: #ffffff; padding-bottom: 0;}
+	.free-shipping a{font-size:13px;line-height: 15px;}
+    .humberger { display: block; float: left; width: 27px; margin-top: 20px; }
+    .header-main{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+    .humberger div{float: left; width: 100%; height: 1px; background-color: #002856; position: relative; -webkit-transition: .45s ease-in-out; -o-transition: .45s ease-in-out; transition: .45s ease-in-out;}
+    .humberger div:after{position: absolute; content: ''; top: -14px; width: 100%; left: 0; height: 1px; background-color:#002856; -webkit-transition: .45s ease-in-out; -o-transition: .45s ease-in-out; transition: .45s ease-in-out;}
+    .header-logo-wrap{width: 79px; margin-top: 4px; margin-left: 10px;}
+    .header-wrap{padding: 5px 0 14px;}
+    .nav-shown .header-logo-wrap{position: relative; z-index: 999}
+    .header-logo-wrap a{width: 100%;}
+    .header-logo-wrap a img{width: 100%;}
+	.contact-location{display: none;}
+    .header-top { padding: 9px 0; }
+	.cart-btn { width: 40px;  height: 40px; padding: 7px 0; top: 55px;
+    right: 19px; }
+	.cart-btn img { width: 15px;}
+    .menu-cart-wrap { float: right; width: 10.111111%; }
+    .nav-wrap{float: left; width: 100%; background-color: #f6eee7; height: 100vh; position: fixed; margin-top: 112px; top: 0; left: 0; padding: 20px; -webkit-transition: 0.45s ease-in-out; -o-transition: 0.45s ease-in-out; transition: 0.45s ease-in-out; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start;  z-index: 99; overflow-y: scroll; -webkit-transform: translateX(200%); -ms-transform: translateX(200%); transform: translateX(200%);}
+    .nav-wrap ul{margin-top: 40px; width: 100%;}
+    .nav-wrap ul li{width: 100%; margin: 20px 0 0 0; text-align: center;}
+    .nav-wrap ul li a{text-align: center; width: 100%;}
+    .navShown{ overflow-y: hidden;}
+    .navShown .humberger div {-webkit-transform: translateY(-8px) rotate(45deg);-ms-transform: translateY(-8px) rotate(45deg);transform: translateY(-8px) rotate(45deg);}
+    .navShown .humberger div:after {-webkit-transform: rotate(90deg) translateX(12px);-ms-transform: rotate(90deg) translateX(12px);transform: rotate(90deg) translateX(12px); top: -12px;}
+    .navShown .nav-wrap{-webkit-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
+    .header-fixed.headroom--not-top .nav-wrap{margin-top: 71px;}
+    /* Menu Style */
+	
+	
+	/* Main Section */
+	.social-icon{display: none;}
+	.hero-wrapper {min-height: 563px;}
+	.hero-thumb{top: 106px;}
+	.hero-content h1 { font-size: 45px; line-height: 45px; color: #ffffff; }
+	.hero-content p{font-size: 20px; line-height: 20px; color: #ffffff;margin-top: 13px;}
+	.hero-btn {  float: none;  width: 162px;  margin: 0 auto; }
+	.hero-btn .btn.medium{min-width: 100%;  position: relative; bottom: -157px;}
+    .hero-content { top: 51%; left: 0; }
+    .discover-product a{width: 100%; padding: 0;}
+    .discover-product a:after {background-image: url(../svgs/home/line-5-copy.svg); width: 140px; height: 18px; top: 8px;}
+	
+	.item-wrap{margin-top: 143px;}
+	.item-inner{margin-left: 0;}
+	.item-info h4{font-size: 20px;}
+	.item-thumb {width: 100%; margin: 9px 0;  border: solid 1px rgba(0, 0, 0, 0.05);}
+	.item-thumb:nth-child(2n+1) {margin-left: 0;}
+	.item-thumb:nth-child(2n+2) {margin-right: 0;}
+    .item-thumb figure{float: left; width: 100%;}
+	.item-thumb img {width: 43%; margin: 0 auto;}
+	.item-wrap .common-wrap{padding: 0 18px;}
+	.products-wrap{margin-top: 42px;}
+	.products-content h2{margin-top: 13px;}
+	.products-content {width: 100%; margin-right: 0; padding: 0 18px;}
+	.products-wrap .common-wrap{padding: 0;}
+	.products-content h4{font-size: 20px;}
+	.products-content p{font-size: 16px; line-height: 20px; margin-top: 25px;}
+    .product-thumb{width: 100%; margin-top: 66px}
+	.van-hunks-stamp { width: 85px; top: -30px; left: 32px; }
+    .van-hunks-bottol { width: 91px; bottom: -24px; right: 20px; }
+	.van-hunks-foilage { width: 203px; bottom: -19px; right: auto; left: -11px; }
+	.discover-product span:after{width: 140px; height: 27px; right: -91%; top: 38%;}
+    .sparkling-wine-info-item{width: 100%;  margin: 0 0 51px;}
+	.sparkling-wine-info-item img{width: 100%;}
+	.sparkling-wine-wrap{margin-top: 62px;}
+	.wine-content{margin-top: 0;}
+	.wine-content h3{font-size: 30px;  line-height: 42px;}
+    .wine-content p{font-size: 16px; line-height: 22px; max-width: 310px; padding-bottom: 0;}
+	.info-product-item {width: 100%; margin: 0 0 40px;}
+    .wine-content a{margin-top: 28px;}
+
+	.info-product-thumb figure {width:100%;}
+	.info-product-thumb img {margin: 0 auto; width: 86px;}
+	.small-batches .info-product-thumb img { width: 42%;}
+	.small-batches{padding-bottom: 20px;}
+	.info-product-content {margin-top: 33px;}
+	.info-product-wrap {margin-top: 25px;}
+	.info-product-content h3{max-width: 215px; font-size: 25px; line-height: 30px;}
+    .info-product-content p { font-size: 16px; line-height: 22px; padding-top: 13px; max-width: 334px; margin: 0 auto; text-align: center; }
+	.famous-thumb img{width: 250px; margin: 0 auto;}
+	.left-img{display: none;}
+	.right-img{display: none;}
+	.famous-inner{padding: 0 18px;}
+	.famous-content p{font-size: 16px; line-height: 20px;  padding-top: 22px;}
+	.mobi-thumb{float: left; width: 100%; margin-top: 50px;}
+	.mobi-thumb img{width: 304px; margin: 0 auto;}
+    .famous-wrap{margin-top: 107px; padding-bottom: 86px;}
+	.famous-thumb{padding-top: 6px;}
+	.famous-content{margin-top: 37px;}
+	.famous-content h2 {margin-top: 14px;}
+	.famous-wrap:after {height: 115px; top: -9%; left: 0; }
+	.famous-wrap:before{height: 109px; bottom: -5%; background-image: url(../svgs/home/wave-7.svg);}
+    .famous-content a { margin-top: 36px; margin-left: 10px; }
+	.shop-drink-wrap {margin-top: 86px; padding-bottom: 14px; }
+	.shop-drink-content h4{margin-top: 20px;}
+	.shop-drink-content h4:after{left: 31%;bottom: 3px; width: 136px;}
+	.discover-product{padding: 0 18px;  margin-top: 59px;}
+    .shop-drink-item {width: 100%; background: #efe6df; padding: 32px 0; margin: 80px 0 0 17px;}
+	.nature-honey-thumb{width: 100%;}
+	.nature-honey-thumb img{width: 100%;}
+	.nature-honey-right{display: none;}
+	.nature-honey-bottom{display: none;}
+	.nature-honey-left { float: left; width: 96px; top: -63px; left: 54px}
+	.nature-honey-content {width: 100%; padding: 0 18px;  margin-top: 28px; }
+    .nature-honey-content p{font-size: 16px; line-height: 20px; max-width: 100%; margin-top: 30px; }
+	.nature-honey-content h4 { padding-bottom: 21px; }
+	.nature-honey-content-list ul li:before{width: 22px;}
+	.nature-honey-content-list ul li{font-size: 16px;}
+	.nature-honey-content-list {margin-top: 32px;}
+    .gallery-wrap {margin-top: 70px; padding-top: 21px; }
+    .gallery-item {width: 48.675%; margin: 0 2.6% 0 0; }
+	.gallery-side-item { margin-left: 0; }
+	.gallery-inner{padding: 0 18px;}
+    .circle{padding: 38px 125px; width: 100%; margin: 12px 0;}
+	.gallery-right-item{margin-right: 0;}
+	.gallery-item:nth-child(2){margin-right: 0;}
+	
+    .shop-drink-info .slick-list{padding: 0 28px 0 0!important;}
+    .shop-drink-wrap .common-wrap{padding: 0 0 0 8px;}
+	.shop-info-content{margin-top: 8px;}
+	.shop-drink-item:hover{background: transparent;}
+    .shop-info-content h3 {font-size: 30px; line-height: 30px; letter-spacing: 0.92px;}
+
+	.shop-drink-thumb img{width: 100%;}
+	.shop-drink-item{margin-top: 36px;}
+    .rose-mead .shop-info-content{margin-top: 14px;}
+    .shop-info-content p {line-height: 18px; padding-top: 13px;}
+	.shop-info-content span{display: none;}
+    .shop-btn{float: left; width: 100%; margin-top: 28px; }
+    .shop-drink-item .btn.medium {min-width: 150px;}
+    .shop-btn a.btn.medium{min-width: 218px;background-color: #643f72; color: #ffffff;}
+    .nature-honey-wrap{margin-top: 92px; padding-bottom: 14px;}
+	.rose-mead .shop-drink-thumb img{width: 100%;}
+	.nature-honey-wrap .common-wrap {padding: 0;}
+	 .rose-mead .hover-thumb img{width: 100%;}
+    .shop-drink-item .hover-thumb img{width: auto; height: 295px;}
+	 .shop-drink-item:hover .shop-btn{opacity: 0;}
+    .add-btn{ bottom: 10px; padding: 0 10px;}
+    .shop-drink-thumb figure{height: 100%;}
+    .round-thumb{float: left; width: 100%; padding: 0 18px; margin-top: 50px;}
+	/* Main Section */
+    
+	/* Footer style */
+    .main-footer-section{margin-top:0;}
+    .news-letter-wrap h2{font-size:35px; line-height: 35px;}
+    .input-col { float: left; width: 69%;}
+    .input-col.sign-up-btn { width: 27%; position: relative; float: right; padding-right: 0; }
+    .input-col input[type="email"], .input-col input[type="submit"]{font-size: 20px; line-height: 23px;  padding: 40px 6px 20px}
+    .social-wrap span, .footer-bottom-bg{display: block; padding-bottom: 13px; }
+    .social-wrap span{font-size: 20px; line-height: 38px;}
+    .social-wrap{margin-top: 51px;}
+    .social-wrap a{font-size: 20px; line-height: 23px; padding-left: 0; margin: 9px}
+    .footer-logo{padding-top: 20px; max-width: 88px;}
+    .copy-right{margin-top: 50px;}
+    .copy-right p, .copy-right ul li{float: left; width: 100%; text-align: center; margin: 22px 0 0 0;}
+    .copy-right ul li:first-child{margin-top: 28px;}
+    .copy-right p{margin-top: 16px;}
+	.ex-sm-container {padding: 0 18px;}
+	.input-wrap {margin-top: 4px;}
+    .main-footer-section:before{background-image: url(../img/footer-img-mobi@2x.png); height: 207px;}
+    .input-col input[type="email"], .input-col input[type="submit"]{font-size: 18px; line-height: 23px; padding: 36px 0px 20px;}
+    .input-col input[type="submit"]{text-align-last: right;}
+    /* Footer style */
+	
+   /* Start Newsletter Style */
+    .newsletter-modal-main-content h2 { font-size: 32px; line-height: 32px;}
+    .newsletter-modal-input-row-wrap{padding: 0;}
+    .newsletter-modal-input input { font-size: 18px; line-height: 24px; height: 60px; padding: 0 5px 0 10px; }
+    .newsletter-modal-input-submit input { padding: 0 10px;}
+    .newsletter-modal-input {width: calc(100% - 105px);}
+    .newsletter-modal-input-submit{width: 105px;}
+    /* End Newsletter Style */
+    .shop-drink-content{padding: 0 14px 0 6px;}
+    .sparkling-wine-info-item:nth-child(2), .sparkling-wine-info-item:nth-child(2) .wine-content{transition-delay: 0.2s!important}
+
+
+
+
+        /* Start Single Product Style */
+        .product-details { padding-top: 111px; padding-bottom: 73px;} 
+        .product-details-thumb { width: 100%; } 
+        .product-details-content-wrap{width: 100%; padding-top: 61px;}
+        .product-details-content { padding: 0 18px; }
+        .product-details-content h3{padding-bottom: 11px;}
+        .product-details-btn { margin-top: 39px; }
+        .product-details-btn ul li { width: 100%; margin-right: 0; margin-bottom: 17px; }
+        .product-details-btn ul li a { padding: 0 32px 0 28px;}
+        .product-details-btn ul li { margin-bottom: 15px; }
+        .product-add-btn { margin-top: 12px; }
+        .product-details-fruity { margin-top: 50px; }
+        .single-product .shop-drink-wrap { margin-top: 62px; }
+        .single-product .shop-drink-content h3 { font-size: 30px; line-height: 30px; letter-spacing: .92px;}
+        .single-product .shop-drink-thumb-back{display: none;}
+        .single-product .shop-drink-info { margin-top: 49px; }
+        .single-product .rose-mead .shop-info-content { margin-top: 14px; }
+        .single-product .shop-info-content { margin-top: 8px; }
+        .single-product .shop-btn a.btn:before{background-color: #643f72;}
+
+        .single-product .gallery-wrap { margin-top: 27px; }
+        .circle figure { max-width: 25px;}
+        .product-details:after{content: ''; position: absolute; top: auto; bottom: 0; left: 50%; width: 90.67%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); height: 1px; background-color: #efe6df;}
+        /* End Single Product Style */
+    
+        /*==== Start shop-dropdown page ====*/
+
+    /* Start dropdown section */
+    .dropdown-mead-wrap .common-wrap{padding: 0 20px 0 18px;}
+    .dropdown-item { width: 100%; padding: 0; margin: 10px 0; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap;}
+    .dropdown-item-thumb img {max-height: 83px;}
+    .dropdown-item-content h3 a { line-height: 20px!important; letter-spacing: 0.55px!important; margin-bottom: 0px; font-size: 18px!important; text-align: left!important;}
+    .dropdown-item-content p {display: none;}
+    a.dropdown-item-thumb{margin-bottom: 0; width: 74px!important;}
+    .dropdown-item-content{width: calc(100% - 74px); max-width: inherit; align-items: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; padding: 0 24px;  padding-top: 16px;}
+    .dropdown-mead-inner{padding-left: 0;}
+    .dropdown-mead-inner h4{font-size: 24px; margin-bottom: 18px; text-align: left;}
+    .dropdown-mead-wrap{margin-top: 0px; z-index: 10; top: 17px;}
+    /* End dropdown section */
+	
+	.single-product-page .nav-wrap{ margin-top: 0; top: 38px;}
+	.single-product-page .header-logo-wrap{z-index: 99;}
+	.single-product-page .menu-cart-wrap{z-index: 99;}
+	.single-product-page .humberger{z-index: 999;}
+	.single-product-page .nav-wrap ul{margin-top: 146px;}
+	
+	
+
+    /*==== End shop-dropdown page ====*/
+	
+	
+	/* Default */
+	
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-thumb{margin-left: 0; margin-top: 28px;}
+	.default-wrap .nature-honey-thumb{margin-right: 0;}
+	
+	.default-wrap .nature-honey-inner{margin-top: 100px;}
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-content{order: 2;}
+	/* Default */
+	
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 280px) and (max-width: 374px){
+    .item-thumb { width: 46%;}
+    .discover-product a{padding-right: 102px;}
+    .discover-product a:after{width: 95px;}
+    .shop-drink-content{padding: 0 14px 0 6px;}
+}
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    h1,.top-table-text h1{font-size:50px; line-height: 55px}
+    h2{font-size:35px; line-height: 35px;}
+    h4{font-size:20px; line-height: 29px}
+    h5{font-size:16px; line-height: 22px}
+    .common-wrap{padding: 0 34px;}
+    .desk{display: none}
+    .mobi{display: block}
+	
+	  /* Menu style */
+	.main-header-section{background-color: #ffffff; padding-bottom: 0;}
+    .main-header-section .common-wrap{padding: 0 26px;}
+	.free-shipping a{font-size:13px; line-height: 15px;}
+    .humberger{display: block; float: left; width: 27px; margin-top: 0; height: 16px; position: relative;}
+    .header-main{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+    .humberger div{float: left; width: 27px; height: 1px; background-color: #002856; position: absolute; -webkit-transition: .45s ease-in-out; -o-transition: .45s ease-in-out; transition: .45s ease-in-out; bottom: 0;}
+    .humberger div:after{position: absolute; content: ''; top: -14px; width: 100%; left: 0; height: 1px; background-color:#002856; -webkit-transition: .45s ease-in-out; -o-transition: .45s ease-in-out; transition: .45s ease-in-out;}
+    .header-logo-wrap{width: 79px; margin-top: 0; margin-left: 0;}
+    .header-wrap { padding: 14px 0; }
+    .nav-shown .header-logo-wrap{position: relative; z-index: 999}
+    .header-logo-wrap a{width: 100%;}
+    .header-logo-wrap a img{width: 100%;}
+	.contact-location{display: none;}
+    .header-top { padding: 8px 0; }
+    .cart-btn {width: 40px; height: 40px; padding: 6px 0 7px; top: 0; right: 0; }
+	.cart-btn img { width: 15px;}
+    .menu-cart-wrap{float: right; width: 40px; height: 40px; position: relative;}
+    .nav-wrap{float: left; width: 100%; background-color: #f6eee7; height: 100vh; position: fixed; margin-top: 140px; top: -28px; left: 0; padding: 20px; -webkit-transition: 0.45s ease-in-out; -o-transition: 0.45s ease-in-out; transition: 0.45s ease-in-out; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start;  z-index: 99; overflow-y: scroll; -webkit-transform: translateX(200%); -ms-transform: translateX(200%); transform: translateX(200%);}
+    .nav-wrap ul{margin-top: 40px; width: 100%;}
+    .nav-wrap ul li{width: 100%; margin: 20px 0 0 0; text-align: center; display: flex; flex-flow: row wrap; justify-content: center;}
+    .nav-wrap ul li a{text-align: center; width: auto; display: block;}
+    .navShown{ overflow-y: hidden;}
+    .navShown .humberger div {-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg); bottom: 7px;}
+    .navShown .humberger div:after {-webkit-transform: rotate(90deg) translateX(12px);-ms-transform: rotate(90deg) translateX(12px);transform: rotate(90deg) translateX(12px); top: -12px;}
+    .navShown .nav-wrap{-webkit-transform: translateX(0%);-ms-transform: translateX(0%);transform: translateX(0%);}
+    /* Menu Style */
+	
+    .hero-wrapper{min-height: 607px; padding-bottom: 30px;}
+    .hero-content h1{font-size: 55px; line-height: 55px; color: #ffffff}
+    .hero-content p{font-size: 20px; line-height: 20px; color: #ffffff; margin-top: 10px;}
+    .hero-btn{margin-top: 178px;}
+    .hero-btn a.btn.medium{display: block; min-width: 160px;}
+    .hero-thumb{top:0;}
+	.shop-drink-content h4:after{left: 39%}
+    .hero-content{left: 50%; transform: translate(-50%, 0); padding: 0 20px; max-width: 350px; position: relative; top: 0; margin-top: 179px;}
+    .products-content{width: 100%; width: 100%; max-width: 520px; margin: 0 auto; float: none;}
+    .products-content h2{font-size: 55px; margin-top: 26px; line-height: 55px;}
+    .products-content p{line-height: 23px; margin-top: 22px;}
+	.product-thumb{width: 100%; margin-top: 127px;}
+	.social-icon{display: none;}
+    .van-hunks-stamp{left: 9%; top: -43px;}
+    .van-hunks-bottol {bottom: 50px; right:-35px; bottom: -37px; right: 24px; width: 132px;}
+    .van-hunks-foilage{width: 49.85714285714286%; left: 0; bottom: -28px;}
+    .discover-product.mobi{width: 100%; display: block; margin-top: 84px;}
+    .discover-product a{width: 100%; padding-right: 70%;}
+    .discover-product a:after{background-image: url(../svgs/home/line-tablet.svg); width: 70%;}
+	.sparkling-wine-info-item{width: 100%; margin: 50px 0 0;}
+	.sparkling-wine-thumb-item img{width: 100%;}
+    .info-product-item{}
+    .small-batches figure{width: auto;}
+	.famous-thumb { float: none; width: 58%; margin: 0 auto; padding-top: 86px; }
+    .left-img{display: block!important; width: 208px; left: -14%; top: 21px;}
+    .right-img { display: block!important; width: 208px; right: -14%; bottom: 44px; }
+	.famous-content{padding-bottom: 40px;}
+	.round-thumb {width: 75%; margin: 0 auto ;}
+    .shop-drink-info{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; justify-content: space-between; padding-left: 16px;}
+    .shop-drink-wrap { margin-top: 144px; }
+    .shop-drink-content { max-width: 520px; padding: 0 10px 0 0; }
+    .shop-drink-content h2 { font-size: 55px; line-height: 55px; }
+    .shop-drink-item{width: 47%; margin: 80px 0;}
+	.shop-info-content span{display: none;}
+	.shop-btn{margin-top: 40px; display: block!important}
+	.add-btn {bottom: -43%; top: auto; width: 61%; left: 21%}
+	.add-btn .btn.medium{min-width: 100%;}
+	.rose-mead .hover-thumb img {width: 80%;}
+	.hover-thumb img {width: 80%;}
+    .nature-honey-inner{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; }
+    .nature-honey-thumb{width: 100%; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2;}
+    .nature-honey-content{width:100%; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1;}
+	.nature-honey-bottom{display: none;}
+	.circle {padding: 40px;}
+	.news-letter-wrap{padding-top: 40px;}
+    .sparkling-wine-info-item{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap;}
+    .sparkling-wine-thumb-item{width: 35.71428571428571%;}
+    .wine-content{width: 58.07142857142858%; margin-left: 6.214285714285714%; text-align: left; margin-top: 25px; margin-top: 5px;}
+    .wine-content a{margin-top: 24px;}
+ 	.shop-drink-item:hover .shop-info-content { margin-top: 46%; }
+	
+    /* Start Newsletter Modal Style */
+    .newsletter-modal-main-content h2 { font-size: 40px; line-height: 40px;}
+    .newsletter-modal-input-row-wrap{padding: 0;}
+    /* End Newsletter Modal Style */
+    .item-wrap{margin-top: 44px;}
+    .item-wrap .common-wrap{padding: 0 34px;}
+    .item-info h4{font-size: 20px;}
+    .item-thumb{border: solid 1px rgba(0, 0, 0, 0.05); width: 23%; margin: 0 1.333333333333333%;}
+    .item-thumb:first-child{margin-left: 0;}
+    .item-thumb:last-child{margin-right: 0;}
+    .item-inner{margin-left: 0; margin-top: 20px;}
+    .sparkling-wine-wrap{margin-top: 22px;}
+    .wine-content p{padding-right: 9px;}
+
+    .famous-wrap:after { height: 172px; top: -12%; }
+    .famous-content h4{font-size: 20px;}
+    .famous-content h2 { margin-top: 10px; font-size: 55px; line-height: 55px; }
+    .famous-content p { font-size: 16px; line-height: 20px; padding-top: 25px; max-width: 521px;}
+    .famous-content a { margin-top: 48px; margin-left: 0; }
+    .famous-wrap:before{background-image: url(../svgs/home/wave-5-tab.svg); height: 172px; bottom: -11.5%;}
+    
+    .shop-drink-info .slick-list { padding: 0 24px 0 0!important; margin-top: 33px; }
+    .shop-drink-wrap .common-wrap{padding: 0 0 0 8px;}
+	.shop-info-content{margin-top: 8px;}
+	/*.shop-drink-item:hover{padding: 0 0;}*/
+    .shop-info-content h3 {font-size: 30px; line-height: 30px; letter-spacing: 0.92px; margin-top: 20px;}
+    .shop-drink-item{background-color: #efe6df; margin: 0 10px; padding: 35px 23px 38px 24px;}
+	.shop-drink-thumb img{width: 100%;}
+	.shop-drink-item{margin-top: 36px;}
+    .rose-mead .shop-info-content{margin-top: 8px;}
+    .shop-info-content p {line-height: 18px; padding-top: 17px;}
+	.shop-info-content span{display: none;}
+    .shop-btn{float: left; width: 100%; margin-top: 28px; }
+    .shop-drink-item .btn.medium {min-width: 150px;}
+    .shop-btn a.btn.medium{min-width: 218px;background-color: #643f72; color: #ffffff;}
+    .nature-honey-wrap{margin-top: 92px; padding-bottom: 14px;}
+	.rose-mead .shop-drink-thumb img{width: 100%;}
+	.nature-honey-wrap .common-wrap {padding: 0;}
+	 .rose-mead .hover-thumb img{width: 100%;}
+    .shop-drink-item .hover-thumb img{width: auto; height: 100%;}
+	 .shop-drink-item:hover .shop-btn{display: none !important;}
+    .add-btn{ bottom: 10px; padding: 0 10px;}
+    .shop-drink-thumb figure{height: 100%;}
+    .round-thumb{float: left; width: 100%; padding: 0 18px; margin-top: 50px;}
+    .shop-drink-item .hover-thumb img { width: 100%; height: 100%; object-position: center; object-fit: cover;}
+    .add-btn { bottom: -66%; left: 50%; transform: translateX(-50%); text-align: center; }
+    .shop-drink-item:hover .shop-info-content { margin-top: 42%;}
+    .nature-honey-thumb { width: 100%; margin-right: 0 !important; padding: 0 34px;}
+    .nature-honey-content { width: 100%; max-width: 520px; margin: 41px auto; }
+    .nature-honey-content h4 { padding-bottom: 28px; }
+    .nature-honey-content h2{font-size: 55px; line-height: 55px; letter-spacing: 0;}
+    .nature-honey-content p { margin-top: 34px;}
+    .nature-honey-thumb { width: 100%; margin-top: 72px; }
+    .nature-honey-left { float: left; width: 99px; position: absolute; top: -61px; left: 85px; }
+    .tablet, .mobi { display: none; }
+    .shop-drink-item:hover .shop-info-content{margin-top: 8px!important; }
+    .shop-drink-item.rose-mead:hover .shop-info-content{margin-top: 8px!important; }
+    .shop-drink-thumb{min-height: 293px;}
+    .add-btn { bottom: 20px !important; }
+    .shop-drink-item {min-height: 582px;}
+    .info-product-item{margin: 0 16px !important; border: 1px solid #979797;}
+    .small-batches figure { width: auto; max-width: 230px; } 
+    .info-product-item { margin: 0 16px !important; border: 1px solid #979797; min-height: 436px; height: 100%; padding: 38px 56px 22px; }
+    .info-product-inner .slick-list{padding: 0 18.476042%;}
+    .info-product-wrap .common-wrap{padding: 0;}
+    .info-product-wrap { margin-top: 109px; }
+    .info-product-content { margin-top: 39px;}
+    .famous-wrap {margin-top:157px;}
+    
+    .header-fixed.headroom--not-top .nav-wrap{margin-top: 102px;}
+    .sparkling-wine-info-item:nth-child(2), .sparkling-wine-info-item:nth-child(2) .wine-content{transition-delay: 0.2s!important}
+
+
+
+
+    /* Start Single Product Style */
+    .product-details { padding-top: 113px; }
+    .product-details-thumb { width: 100%; }
+    .product-details-content-wrap{width: 100%; padding-top: 71px;}
+    .single-product .shop-drink-wrap { margin-top: 200px; }
+    .single-product .shop-drink-content { padding: 0 20px 0 0; }
+    .single-product .shop-drink-thumb-back{display: none;}
+    .single-product .shop-drink-info .slick-list { margin-top: 18px; }
+    .single-product .shop-info-content { margin-top: 0px; }
+    .single-product .rose-mead .shop-info-content { margin-top: 0px; }
+    .single-product .shop-btn a.btn:before{background-color: #643f72;}
+
+    .single-product .shop-drink-item:hover .shop-info-content{margin-top: 0 !important;}
+    /* End Single Product Style */
+
+    /*==== Start shop-dropdown page ====*/
+    
+    /* Start dropdown section */
+    .dropdown-mead-wrap {margin-top: 0; padding: 55px 0; top: 15px; z-index: 10;}
+    .dropdown-mead-inner .mobi {display: block !important; text-align: left;}
+    .dropdown-mead-inner { padding-left: 7px; }
+    .dropdown-item-wrap{margin-top: 13px;}
+    .dropdown-item { width: 100%; padding: 0; margin: 0; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; align-items: center; position: relative; margin-bottom: 18px; }
+    a.dropdown-item-thumb{margin-bottom: 0;}
+    .dropdown-mead-inner h4{margin-bottom: 15px;}
+    .dropdown-item-thumb img {width: auto;max-height: 150px;}
+    .dropdown-item-content { width: 100%; margin-bottom: 0; max-width: 310px; margin: 0 26px; padding-left: 10px; position: relative; }
+    .dropdown-item-content h3 { line-height: 30px; letter-spacing: 0.74px; text-align: left; margin-bottom: 8px; font-size: 24px; margin-top: 0; }
+    .dropdown-item-content p {text-align: left;max-width: 240px; float: left;}
+    .dropdown-item::after {content: ""; position: absolute; background-image: url(../svgs/shop-dropdown/right-arrow.svg); width: 46px; height: 26px; top: 62px; right: 44px; left: auto;}
+	
+	.dropdown-item-content h3 a{  font-size: 24px!important; letter-spacing: 0.74px!important;     margin-bottom: 8px;}
+	
+	
+	.single-product-page .nav-wrap{ margin-top: 0; top: 38px;}
+	.single-product-page .header-logo-wrap{z-index: 99;}
+	.single-product-page .menu-cart-wrap{z-index: 99;}
+	.single-product-page .humberger{z-index: 999;}
+	.single-product-page .nav-wrap ul{margin-top: 146px;}
+	
+	.dropdown-mead-wrap .common-wrap{padding: 0 18px;}
+	
+	
+	
+	
+    /* End dropdown section */
+    
+    /*==== End shop-dropdown page ====*/
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    h2{font-size: 45px !important; line-height: 45px !important;}
+    .wine-content h3 { font-size: 26px; line-height: 26px; font-family: 'TheHound-Quail-Bold',sans-serif;}
+    .wine-content h3 a{margin-top: 0;}
+    .wine-content p { padding-right: 0; font-size: 16px;}
+    .wine-content > a { margin-top: 15px; font-size: 17px; min-width: 100%; }
+    .sparkling-wine-info-item{align-items: center;}
+    .left-img{display: none !important;}
+    .right-img{display: none !important;}
+    .shop-drink-item { background-color: #efe6df; margin: 0 10px; padding: 20px 8px 38px 8px; min-height: 553px;}
+    .shop-info-content h3 { font-size: 25px; line-height: 25px; letter-spacing: 0;}
+    .shop-drink-thumb{min-height: 280px !important;}
+    .shop-drink-item .btn.medium { min-width: 100%; font-size: 18px; }
+    .add-btn { width: 80%; bottom: 20px; } 
+    .shop-drink-item:hover .shop-info-content { margin-top: 55%; padding: 20px 0; }
+    .shop-drink-item:hover .shop-info-content { margin-top: 0; padding: 0; }
+    .nature-honey-content { width: 100%; padding: 0 20px;}
+    .famous-wrap .common-wrap{padding: 0 20px;}
+    .info-product-inner .slick-list {padding: 0 10%;}
+    .info-product-content h3 {font-size: 28px;}
+    .input-col.sign-up-btn { width: 35%;}
+    
+
+    /*==== Start shop-dropdown page ====*/
+    .single-product .shop-drink-info{margin-top: 30px;}
+    .circle figure { max-width: 30px;}
+   
+	.copy-right p, .copy-right ul li{color: #ffffff;}
+	.copy-right ul li a{color: #ffffff;}
+	    /*==== Start shop-dropdown page ====*/
+    
+    /* Start dropdown section */
+    .dropdown-mead-wrap {margin-top: 0; padding: 91px 0; top: 15px; z-index: 9;}
+    .dropdown-mead-inner .mobi {display: block !important; text-align: left;}
+    .dropdown-mead-inner { padding-left: 7px; }
+    .dropdown-item-wrap{margin-top: 13px;}
+    .dropdown-item { width: 100%; padding: 0; margin: 0; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; flex-flow: row wrap; align-items: center; position: relative; margin-bottom: 18px; }
+    a.dropdown-item-thumb{margin-bottom: 0;}
+    .dropdown-mead-inner h4{margin-bottom: 15px;}
+    .dropdown-item-thumb img {width: auto;max-height: 150px;}
+    .dropdown-item-content { width: 100%; margin-bottom: 0; max-width: 310px; margin: 0 26px; padding-left: 10px; position: relative; }
+    .dropdown-item-content h3 { line-height: 30px; letter-spacing: 0.74px; text-align: left; margin-bottom: 8px; font-size: 24px; margin-top: 0; }
+    .dropdown-item-content p {text-align: left;max-width: 240px; float: left;}
+    .dropdown-item::after {content: ""; position: absolute; background-image: url(../svgs/shop-dropdown/right-arrow.svg); width: 46px; height: 26px; top: 62px; right: 44px; left: auto;}
+	
+	.dropdown-item-content h3 a{  font-size: 24px!important; letter-spacing: 0.74px!important;     margin-bottom: 8px;}
+	
+	
+	.single-product-page .nav-wrap{ margin-top: 0; top: 38px;}
+	.single-product-page .header-logo-wrap{z-index: 99;}
+	.single-product-page .menu-cart-wrap{z-index: 99;}
+	.single-product-page .humberger{z-index: 999;}
+	.single-product-page .nav-wrap ul{margin-top: 146px;}
+	
+	.dropdown-mead-wrap .common-wrap{padding: 0 18px;}
+	
+	
+    /* End dropdown section */
+	
+	
+	/* Default */
+	
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-thumb{margin-left: 0;}
+	.default-wrap .nature-honey-content{order: 2;}
+	.default-wrap .nature-honey-inner{margin-top: 80px;}
+	
+	/* Default */
+	
+	
+}
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.mobi{display: none;}
+	.desk{display: block;}
+
+    .products-content h2 { margin-top: 18px; font-size: 55px; line-height: 55px; }
+    .products-content p { margin-top: 16px; max-width: 540px; }
+    .left-img { position: absolute; width: 320px; left: -17%; top: 20px; z-index: 9; }
+    .right-img { position: absolute; width: 320px; right: -17%; bottom: 20px; z-index: 9; }
+    .shop-drink-thumb > figure img { width: 90px!important; margin: 0 auto; }
+    .rose-mead .shop-drink-thumb > figure img{width: 137px!important;}
+    .shop-drink-thumb .hover-thumb figure, .shop-drink-thumb .hover-thumb img{height: 100%;}
+    .nature-honey-content{margin-top: 0;}
+    .van-hunks-bottol{right: -37px; z-index: 1}
+    .van-hunks-foilage{width: 344px; }
+
+
+    /* Start Single Product Style */
+    .product-details-content { padding: 0 30px; }
+    .product-details-content-wrap { width: 50%; padding-top: 0; }
+
+    /* End Single Product Style */
+	
+	
+	/*Drop-down*/
+	
+	.dropdown-mead-wrap{margin-top: 0;}
+	
+	/*Drop-down*/
+	
+	/* Default */
+	
+	
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-content{order: 0;}
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-thumb{margin-top: 28px; margin-right: 0; margin-left: 9.647651006711409%; order: 1; }
+	/* Default */
+	
+	
+    
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    
+    h1,.top-table-text h1{font-size:80px; line-height: 75px}
+    h2{font-size:60px; line-height: 55px}
+    h4{font-size:24px; line-height: 29px}
+    
+    .tablet, .mobi{display: none;}
+    .phone-nav{left:35px}
+    .shopping-bag{right: 35px}
+    .main-content-wrap{padding-top: 68px;}
+    
+	.nature-honey-thumb{width: 100%;}
+	.nature-honey-content{width: 100%;}
+	.shop-drink-item:hover .shop-info-content { margin-top: 56%; }
+	.add-btn { bottom: -66%;}
+	
+    /* Footer */
+    .main-footer-section { margin-top: 0px; }
+    .main-footer-section .ex-sm-container { max-width: 581px; }
+    .news-letter-wrap { float: none; width: 100%; text-align: center; max-width: 461px; margin: 35px auto 0; clear: both; }
+    .news-letter-wrap h2 { font-size: 40px; line-height: 35px; }
+    .input-col input[type="email"], .input-col input[type="submit"]{ height: 88px; font-size:20px; line-height: 23px;     padding: 37px 20px 20px; }
+    .input-col.sign-up-btn { width: 25%; position: relative; float: right; padding-right: 20px; }
+    .social-wrap { margin-top: 42px; }
+    .social-wrap span, .social-wrap a { font-size: 20px; line-height: 23px; }
+    .social-wrap a{padding-left: 0;}
+    .copy-right{margin-top: 66px;}
+    .copy-right.mobi{display: none;}
+    .copy-right p, .copy-right ul, .copy-right ul li { margin: 0 16px;}
+    .copy-right p{margin-left: 0;}
+    .copy-right ul li:last-child{margin-right: 0;}
+    .footer-bottom-bg { padding: 0 10px; margin-top: 119px; }
+    .ship { width: 51px; bottom: 39px; right: 29.8%; }
+    /* Footer */
+    .input-col.sign-up-btn { width: 35%; padding-right: 0;}
+    .social-icon{display: none;}
+	
+	
+	/* Default */
+	
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-thumb{margin-left: 0; margin-right: 0;}
+	.default-wrap .nature-honey-thumb{margin-right: 0;}
+	.default-wrap .nature-honey-inner:nth-child(odd) .nature-honey-content{order: 1;}
+	/* Default */
+	
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+	.mobi{display: none;}
+	.desk{display: block;}
+	.famous-thumb {float: none; width: 70%; margin: 0 auto;}
+	.left-img { left: -23%; width: 280px; }
+	.right-img{right:-23%; width: 280px; bottom: -45px;}
+	.shop-drink-item { float: left; width: 48%; margin: 86px 0.01446% 0; }
+	.add-btn {bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center;}
+	.hero-content h1{font-size: 55px;}
+    .hero-content {left: 50%; transform: translate(-50%, -50%);}
+	.products-content {width: 100%; margin-right: 0;}
+	.product-thumb{width: 100%; margin-top: 40px;}
+	.sparkling-wine-info-item { width: 46%; margin: 40px 2% 0; }
+    .wine-content h3 { font-size: 35px; line-height: 35px;}
+	.small-batches{margin-top: 20px;}
+	.info-product-content p{max-width: 280px; margin: 0 auto; padding-top: 30px;}
+    .rose-mead .shop-info-content{margin-top: 17px;}
+    .shop-drink-thumb{min-height: 250px;}
+	.shop-drink-item:hover .shop-info-content { margin-top: 17px; }
+    .van-hunks-stamp { left: -27px; }
+    .shop-drink-info{display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap;}
+    .rose-mead .shop-drink-thumb img { width: 208px!important; }
+    .hover-thumb figure img{width: 208px;}
+
+    .info-product-thumb { float: left; width: 100%; min-height: 150px; }
+    .small-batches figure{width: 180px;}
+    .info-product-content { margin-top: 50px !important;} 
+    .info-product-content h3 {font-size: 25px; line-height: 25px; }
+    .info-product-item{margin-top: 30px !important;}
+    .circle { background-color: #e3f7ff; padding: 60px; }
+    .nature-honey-content{margin-top: 50px;}
+    .cart-btn { width: 40px; height: 40px; padding: 7px 0; top: 62px; right: 40px;}
+    .cart-btn img { width: 15px; }
+
+
+
+    /* Start Single product Style */
+    .product-details { padding-top: 125px; }
+    .product-details-thumb { width: 100%; }
+    .product-details-content-wrap{width: 100%; padding-top: 71px;}
+    .single-product .shop-drink-thumb-back figure img{width: 75% !important;}
+    .single-product .shop-drink-thumb-back { position: absolute; bottom: 15px;}
+    .circle figure { max-width: 40px;}
+    .single-product .rose-mead .shop-drink-thumb > figure img { width: 180px!important; }
+    .single-product .shop-drink-thumb > figure img { width: 120px!important; }
+    /* End Single product Style */
+
+    /*==== Start shop-dropdown page ====*/
+
+    /* Start dropdown section */
+    .dropdown-mead-inner {padding-left: 0;}
+    .dropdown-item {width: 48%;margin: 8px 1%;}
+    /* End dropdown section */
+
+    /*==== End shop-dropdown page ====*/
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    h2{font-size:60px; line-height: 55px;}
+    h3{font-size:25px; line-height: 30px}
+    .header-fixed.headroom--not-top .cart-btn{width: 40px; height: 40px; padding: 7px 0;}
+    .header-fixed.headroom--not-top .cart-btn img{width: 15px;}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1150px) {
+
+    h2{font-size:60px; line-height: 55px;}
+    h3{font-size:25px; line-height: 30px}
+    .modal-inner{padding-bottom: 242px;}
+
+    .left-img { position: absolute; width: 320px; left: -17%; top: 20px; z-index: 9; }
+    .right-img { position: absolute; width: 320px; right: -17%; bottom: 20px; z-index: 9; }
+    /*.shop-drink-thumb{min-height: 435px;}*/
+    .shop-drink-thumb > figure img { width: 90px!important; margin: 0 auto; }
+    .rose-mead .shop-drink-thumb > figure img{width: 137px!important;}
+    .shop-drink-thumb .hover-thumb figure, .shop-drink-thumb .hover-thumb img{height: 100%;}
+
+    /* Start Single Product Style */
+    .product-details-content-wrap { padding-top: 50px; }
+    .dropdown-item-content h3{min-height: 60px;}
+    /* End Single Product Style */
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1365px){
+    .shop-drink-thumb > figure img { width: 90px!important; margin: 0 auto; }
+    .rose-mead .shop-drink-thumb > figure img{width: 137px!important;}
+    .shop-drink-thumb .hover-thumb figure, .shop-drink-thumb .hover-thumb img{height: 100%;}
+    .header-fixed.headroom--not-top .cart-btn{width: 40px; height: 40px; padding: 7px 0;}
+    .header-fixed.headroom--not-top .cart-btn img{width: 15px;}
+}
+
+
+
+
+
+
+
+
+
